@@ -1,0 +1,15 @@
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\obj\Debug\net6.0\XadrezProject.csproj.AssemblyReference.cache
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\obj\Debug\net6.0\XadrezProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\obj\Debug\net6.0\XadrezProject.AssemblyInfoInputs.cache
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\obj\Debug\net6.0\XadrezProject.AssemblyInfo.cs
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\obj\Debug\net6.0\XadrezProject.csproj.CoreCompileInputs.cache
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\bin\Debug\net6.0\XadrezProject.exe
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\bin\Debug\net6.0\XadrezProject.deps.json
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\bin\Debug\net6.0\XadrezProject.runtimeconfig.json
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\bin\Debug\net6.0\XadrezProject.dll
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\bin\Debug\net6.0\XadrezProject.pdb
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\obj\Debug\net6.0\XadrezProject.dll
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\obj\Debug\net6.0\refint\XadrezProject.dll
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\obj\Debug\net6.0\XadrezProject.pdb
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\obj\Debug\net6.0\XadrezProject.genruntimeconfig.cache
+C:\Users\rodrigo.garcao\Desktop\Projetos_C#\XadrezProject\XadrezProject\obj\Debug\net6.0\ref\XadrezProject.dll
