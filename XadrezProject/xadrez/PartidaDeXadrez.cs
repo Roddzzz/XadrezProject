@@ -9,7 +9,7 @@ namespace XadrezProject.xadrez {
     internal class PartidaDeXadrez {
         public Tabuleiro tab { get; private set; }
         public int turno { get; private set; }
-        public Cor jogadorAtual { get; private set; };
+        public Cor jogadorAtual { get; private set; }
         public bool terminada { get; private set; }
         private HashSet<Peca> pecas;
 
@@ -31,6 +31,24 @@ namespace XadrezProject.xadrez {
             executaMovimento(origem, destino);
             turno++;
             mudaJogador();
+        }
+
+        public void validarPosicaoDeOrigem(Posicao pos) {
+            if (tab.peca(pos) == null) {
+                throw new TabuleiroException("Não existe peca na posição de origem escolhida!");
+            }
+            if(jogadorAtual != tab.peca(pos).cor) {
+                throw new TabuleiroException("A peça escolhida não é sua!");
+            }
+            if (!tab.peca(pos).existeMovimentosPossiveis()) {
+                throw new TabuleiroException("Não há moviemntos possiveis para a peça de origem escolhida!");
+            }
+        }
+
+        public void validarPosicaoDeDestino(Posicao origem, Posicao destino) {
+            if (!tab.peca(origem).podeMoverPara(destino)) {
+                throw new TabuleiroException("Posição de destino invalida");
+            }
         }
 
         private void mudaJogador() {

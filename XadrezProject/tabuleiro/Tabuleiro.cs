@@ -34,7 +34,7 @@ namespace XadrezProject.tabuleiro {
                 throw new TabuleiroException("Ja existe uma peça nessa posicao!");
             }
             pecas[pos.linha, pos.coluna] = p;
-            p.Posicao = pos;
+            p.posicao = pos;
         }
 
         public Peca retirarPeca(Posicao pos) { 
@@ -42,7 +42,7 @@ namespace XadrezProject.tabuleiro {
                 return null;
             }
             Peca aux = peca(pos);
-            aux.Posicao = null;
+            aux.posicao = null;
             pecas[pos.linha, pos.coluna] = null;
             return aux;
         }

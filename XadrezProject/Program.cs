@@ -8,16 +8,47 @@ using XadrezProject.xadrez;
 public class Program {
     public static void Main() {
         try {
-            Tabuleiro tab = new Tabuleiro(8, 8);
+            PartidaDeXadrez partida = new PartidaDeXadrez();
 
-            tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 3));
-            tab.colocarPeca(new Torre(tab, Cor.Branca), new Posicao(0, 7));
+            while (!partida.terminada) {
 
-            Tela.imprimirTabuleiro(tab);
+                try {
+                    Console.Clear();
+                    Tela.imprimirPartida(partida);
+
+                    Console.WriteLine();
+                    Console.Write("Origem: ");
+                    Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
+                    partida.validarPosicaoDeOrigem(origem);
+
+                    bool[,] posicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis();
+
+                    Console.Clear();
+                    Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
+
+                    Console.WriteLine();
+                    Console.Write("Destino: ");
+                    Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
+                    partida.validarPosicaoDeDestino(origem, destino);
+
+                    partida.realizaJogada(origem, destino);
+                }
+                catch (TabuleiroException e) {
+                    Console.WriteLine(e.Message);
+                    Console.ReadLine();
+                }
+            }
+            Console.Clear();
+            Tela.imprimirPartida(partida);
         }
         catch (TabuleiroException e) {
             Console.WriteLine(e.Message);
         }
+
+        Console.ReadLine();
+    }
+}
+
 
     }
 }
